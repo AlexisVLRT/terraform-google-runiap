@@ -22,4 +22,3 @@ module "lb-iap" {
 }
 ```
 Fully functional examples are located in the [examples](./examples/) directory.
-
