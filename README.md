@@ -7,7 +7,7 @@ This module is tested for use with Terraform 0.14.
 ## Usage
 ```hcl
 module "lb-iap" {
-  source               = "TODO"
+  source               = "AlexisVLRT/runiap/google"
   project_id           = "my-gcp-project-id"
   region               = "europe-west1"
   ssl_certificate_name = "load-balancer-cert"
