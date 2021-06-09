@@ -33,7 +33,7 @@ resource "google_iap_brand" "project_brand" {
 module "lb-iap" {
   depends_on           = [google_cloud_run_service.default, google_iap_brand.project_brand]
   source               = "AlexisVLRT/runiap/google"
-  project_id           = var.project_id
+  project_id           = "my-project-id"
   region               = "europe-west1"
   ssl_certificate_name = "load-balancer-cert"
   cloud_run            = google_cloud_run_service.default
